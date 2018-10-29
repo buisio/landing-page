@@ -1,0 +1,121 @@
+/* buis.io specific stylings */
+
+/* navbar */
+.buis .navbar-nav .nav-item {
+  color: #563D7C;
+}
+.buis .navbar-nav .nav-item .nav-link {
+  color: #563D7C;
+}
+
+.buis .nav-white .nav-item .nav-link {
+  color: #FFFFFF;
+}
+.buis .nav-white .navbar-brand {
+	color: #FFFFFF;
+}
+
+.buis .nav-white .nav-item .nav-link:hover {
+  color: #F1F1F1;
+}
+
+.buis .navbar.past-main {
+	background-color: rgba(255, 255, 255, 0.99) !important;
+}
+.buis .past-main .container .navbar-brand,
+.buis .past-main .container .navbar-collapse .navbar-nav .nav-item a.nav-link
+{
+	color: #0AF;
+}
+
+/* buttons */
+.buis .btn-action,
+.buis .btn-action:hover {
+  background: #0AF;
+	border-color: #0AF;
+}
+.buis .pricing-section .btn-action {
+	background-color: #0facf3;
+	border-color: #0facf3;
+}
+.buis .btn-action {
+	color: #FFFFFF;
+}
+.buis .btn-action:hover {
+	color: #FFFFFF;
+}
+.buis .btn-action:focus {
+	color: #FFFFFF;
+}
+.buis .btn-send {
+  color: #FFFFFF;
+  background: #0AF;
+	/*background: linear-gradient(90deg,#42b0ff,#4262ff);*/
+}
+.buis .btn-send:hover {
+  color: #FFFFFF;
+  background: #0AF;
+	/*background: linear-gradient(90deg,#4262ff,#42b0ff);*/
+}
+
+/* form */
+.buis .form-control:focus {
+  border-color: #2e7eed;
+	background: #F4F4F4;
+}
+.buis textarea.form-control {
+	background: #F9F9F9;
+}
+.buis .contact-form .form-control {
+  border-bottom-color: #0AF;
+}
+
+.buis .formee .right {
+  /*
+  color: #FFFFFF;
+  background-color: #387ed1;
+	background-image: linear-gradient(90deg,#42b0ff,#4262ff);
+   */
+  background: #0AF;
+  color: #FFF;
+}
+
+/* hero */
+.buis .hero-home {
+  /*
+	background: linear-gradient(to right, rgba(106, 17, 203, 0.95), rgba(37, 117, 252, 0.95)), url(../images/world-map.png) no-repeat center center;
+  */
+  background: url(../images/buis-hero.png) no-repeat center center;
+	background-size: cover;
+}
+
+/* footer */
+.buis .footer {
+  background-color: #000;
+}
+.buis .footer h2, .buis .footer p, .buis .footer .footer-sub {
+	color: #FFFFFF;
+}
+.buis .footer .footer-sub a {
+	color: #FFFFFF;
+}
+.buis .footer .footer-nav a, .buis .footer a.f-mail {
+	color: #D8D8D8;
+}
+
+.buis .back-to-top {
+	background: rgba(0, 170, 255, 0.5);
+	border-radius: 20px;
+}
+.buis .back-to-top:hover {
+	background: rgba(255, 255, 255, 0.5);
+}
+.buis .back-to-top i {
+  top: 6px;
+}
+.buis .back-to-top:hover i {
+  color: #0AF;
+}
+.buis .back-to-top:focus {
+  color: #FFFFFF;
+}
