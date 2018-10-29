@@ -161,7 +161,6 @@ body {
 .navbar .navbar-brand {
 	font-size: 1.1rem;
 	font-weight: 600;
-	color: #563D7C;
 }
 
 .navbar .navbar-toggler {
@@ -189,26 +188,15 @@ body {
 	font-size: 0.85rem;
 	font-weight: 400;
   text-transform: capitalize;
-  color: #563D7C;
 }
 
 .navbar-nav .nav-item .nav-link {
-  color: #563D7C;
 	font-weight: 500;
 }
 
 .nav-white .nav-item .nav-link {
 	font-size: 0.9rem;
 	text-transform: capitalize;
-  color: #FFFFFF;
-}
-
-.nav-white .nav-item .nav-link:hover {
-  color: #F1F1F1;
-}
-
-.nav-white .navbar-brand {
-	color: #FFFFFF;
 }
 
 @media only screen and (max-width: 768px) {
@@ -218,12 +206,6 @@ body {
 		padding-top: 10px;
 		padding-bottom: 10px;
 	}
-	.nav-white .navbar-brand {
-		color: #4957B8;
-	}
-	.nav-white .nav-item .nav-link {
-		color: #4957B8;
-	}
 }
 
 @media only screen and (min-width: 240px) {
@@ -231,7 +213,6 @@ body {
 .navbar.past-main {
 	padding-top: 15px;
 	padding-bottom: 15px;
-	background-color: rgba(255, 255, 255, 0.99) !important;
 	-webkit-box-shadow: 0 1px 5px 0 rgba(96, 96, 96, 0.3);
 	-moz-box-shadow: 0 1px 5px 0 rgba(96, 96, 96, 0.3);
 	box-shadow: 0 1px 5px 0 rgba(96, 96, 96, 0.3);
@@ -244,16 +225,11 @@ body {
 
 
 .nav-white.past-main .nav-item .nav-link {
-  color: #4957B8;
 	font-weight: 500;
 }
 
 .navbar.past-main .nav-item .nav-link {
 	font-weight: 500;
-}
-
-.nav-white.past-main .navbar-brand {
-	color: #4957B8;
 }
 
 .nav-white.effect-main {
@@ -461,9 +437,7 @@ body {
 
 .btn-action {
 	padding: 10px 24px;
-	background: #6c63ff;
 	border: 2px solid;
-	border-color: #6c63ff;
 	border-radius: 100px;
 	box-shadow: 0 3px 15px 0 rgba(0,0,0,.25);
 	font-family: 'Montserrat';
@@ -471,7 +445,6 @@ body {
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	color: #FFFFFF;
 	margin: 25px 10px 0 0;
 	-webkit-transition: 0.2s;
 	-moz-transition: 0.2s;
@@ -479,16 +452,9 @@ body {
 }
 
 .btn-action:hover {
-	color: #FFFFFF;
-	border-color: #6c63ff;
-	background: #6c63ff;
 	-webkit-transform: translateY(-2px);
 	-moz-transform: translateY(-2px);
 	transform: translateY(-2px);
-}
-
-.btn-action:focus {
-	color: #FFFFFF;
 }
 
 
@@ -1204,7 +1170,6 @@ body {
 }
 
 
-
 /* ----- Pricing Tables Styling Starts ----- */
 
 .pricing-section {
@@ -1317,22 +1282,6 @@ body {
 .pricing-section .table-center {
 	margin-top: 0;
 }
-
-.pricing-section .btn-action {
-	background-color: #0facf3;
-	border-color: #0facf3;
-}
-
-.btn-green {
-	background-color: #46da60 !important;
-	border-color: #46da60 !important;
-}
-
-.text-green {
-	color: #46da60 !important;
-}
-
-
 
 /* ----- f-box Section Styling Starts Here -----*/
 
@@ -1466,14 +1415,11 @@ body {
   border-radius: 0 10px 10px 0;
   margin: 0;
   padding: 0 25px 0 25px;
-  background-color: #387ed1;
-	background-image: linear-gradient(90deg,#42b0ff,#4262ff);
 	font-family: 'Montserrat';
 	font-size: 14px;
 	font-weight: 500;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-  color: #FFFFFF;
 	cursor: pointer;
   outline: none;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -1710,8 +1656,6 @@ label {
 }
 
 .form-control:focus {
-  border-color: #2e7eed;
-	background: #F4F4F4;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -1721,7 +1665,6 @@ label {
 textarea,
 textarea.form-control {
 	height: auto;
-	background: #F9F9F9;
 }
 
 
@@ -1765,18 +1708,14 @@ textarea.form-control {
   margin-bottom: 20px;
 	padding: 8px 16px;
   border-radius: 3px;
-  color: #FFFFFF;
 	border: 0;
 	cursor: pointer;
-	background: linear-gradient(90deg,#42b0ff,#4262ff);
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
     transition: 0.5s;
 }
 
 .btn-send:hover, .btn-send:focus, .btn-send:active {
-  color: #FFFFFF;
-	background: linear-gradient(90deg,#4262ff,#42b0ff);
 	border: 0;
   outline: none !important;
 	-webkit-transition: 0.5s;
@@ -1866,21 +1805,17 @@ text-align: center;
 
 .footer {
 	padding: 50px 0 50px 0;
-	background: #2d2d86;
 }
 
 .footer h2 {
 	font-size: 18px;
 	font-weight: 500;
-	color: #FFFFFF;
 	margin-bottom: 10px;
 }
 
 .footer p {
 	font-size: 13px;
 	font-weight: 400;
-	color: #364655;
-	color: #FFF;
 	letter-spacing: 0;
 	line-height: 1.4;
 	max-width: 320px;
@@ -1906,8 +1841,6 @@ text-align: center;
 	font-family: 'Montserrat';
 	font-size: 14px;
 	font-weight: 500;
-	color: #364655;
-	color: #D8D8D8;
 	letter-spacing: 0;
 	text-transform: capitalize;
 }
@@ -1932,16 +1865,12 @@ text-align: center;
 	font-family: 'Montserrat';
 	font-size: 13px;
 	font-weight: 300;
-	color: #364655;
-	color: #D8D8D8;
 }
 
 .footer .footer-sub li a {
 	font-family: 'Montserrat';
 	font-size: 14px;
 	font-weight: 300;
-	color: #364655;
-	color: #D8D8D8;
 }
 
 .footer .f-mail {
@@ -1949,8 +1878,6 @@ text-align: center;
 	font-family: 'Montserrat';
 	font-size: 13px;
 	letter-spacing: 0;
-	color: #364655;
-	color: #D8D8D8;
 	line-height: 1.6;
 }
 
