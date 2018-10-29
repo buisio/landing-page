@@ -93,7 +93,7 @@
 .buis .footer {
   background-color: #000;
 }
-.buis .footer h2, .buis .footer p, .buis .footer .footer-sub {
+.buis .footer h2, .buis .footer p, .buis .footer p a, .buis .footer .footer-sub {
 	color: #FFFFFF;
 }
 .buis .footer .footer-sub a {
