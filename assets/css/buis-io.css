@@ -81,7 +81,7 @@
 }
 
 /* hero */
-.buis .hero-home {
+.buis .hero-home, .buis .cta-big {
   /*
 	background: linear-gradient(to right, rgba(106, 17, 203, 0.95), rgba(37, 117, 252, 0.95)), url(../images/world-map.png) no-repeat center center;
   */
