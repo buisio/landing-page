@@ -1,6 +1,10 @@
 /* buis.io specific stylings */
 
 /* navbar */
+.buis .features h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
 .buis .navbar-nav .nav-item {
   color: #563D7C;
 }
