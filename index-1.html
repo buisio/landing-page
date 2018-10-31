@@ -35,6 +35,7 @@
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#features">About</a></li>
                 <!--<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Features</a></li>-->
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#pricing">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#faq">FAQ</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">Get started</a></li>
               </ul>
@@ -116,7 +117,7 @@
                       <h2>Ship sooner.</h2>
                       <p>Focus on your solution from day one instead of
                       tooling. Bootstrap scalable production-grade environments
-                      without sacrificing flexibility and indepedence such that
+                      without sacrificing flexibility and independence such that
                       you don't have to consider costly, error-prone and
                       time-consuming migrations when you'd much rather spend
                       your resources on growth.</p>
@@ -396,6 +397,7 @@
         </div>
 
 
+        <!--
         <div id="contact" class="contact">
           <div class="container">
             <div class="row text-center">
@@ -440,6 +442,168 @@
                       </div>
                     </div>
                   </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        -->
+
+        <div id="faq" class="faq">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="faq-intro text-center">
+                  <h1>Frequently asked questions</h1>
+                  <!--<p>Drop us a word if your questions isn't listed here. Well get to you within 24 hours</p>-->
+                </div>
+                <div data-accordion-group class="accordion-box">
+                  <div class="accordion" data-accordion>
+                    <div data-control><span><i class="icon-bar"></i></span>
+                      <h2>What is the difference between using managed services like Kubernetes on GCP, AWS, Azure, OpenStack providers, etc.?</h2>
+                    </div>
+                    <div data-content>
+                      <p>Managed service such as the managed Kubernetes
+                      offering by many providers still requires some form of
+                      configuration. Details such as migration pipelines,
+                      networking policies, machine attributes and security
+                      policies are among the many features that will need
+                      to be defined in most cases.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="accordion" data-accordion>
+                    <div data-control><span><i class="icon-bar"></i></span>
+                      <h2>How would I benefit, as provisioning machines in the cloud is relatively easy?</h2>
+                    </div>
+                    <div data-content>
+                      <p>With our Ops-as-a-Service offering, you can avoid
+                      thinking about the techno-adminstrative details and focus
+                      on the topics that make a difference for your solution.
+                      A practical environment to deploy software is a bit more
+                      than just machinery. We'll provide you with simple
+                      mechanism to deploy code within team of varying sizes,
+                      tooling for managing versioning of the deployed
+                      resources, audit reports to meet compliance requirements,
+                      documentation on managing your environment and updates to
+                      cover security fixes and improvements in the tooling
+                      that your solution depends on. We employ best-practices
+                      and run extensive tests on the configurations that we
+                      provide in order to allow you to have confidence in the
+                      foundation that your solution depends on and save you
+                      the burden of having to keep up with all the updates with
+                      regards to the many tools that facilitate the operation
+                      of a solution in the cloud.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion" data-accordion>
+                    <div data-control>
+                      <h2>Who owns the resources that my workloads run on?</h2>
+                    </div>
+                    <div data-content>
+                      <p>You own the infrastructure. We only cover ops
+                      which means that we provision and manage the
+                      resources within your IaaS account.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion" data-accordion>
+                    <div data-control>
+                      <h2>How do you manage resources within my IaaS account?</h2>
+                    </div>
+                    <div data-content>
+                      <p>You provide us a key with the necessary permissions
+                      which we use to provision resources or manage your
+                      configuration.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion" data-accordion>
+                    <div data-control>
+                      <h2>Do you always have access to my resources?</h2>
+                    </div>
+                    <div data-content>
+                      <p>No, we offer tooling to allow you to disable the
+                      provided keys when there is no work to be done.
+                      Furthermore you can use this tooling to provision and
+                      issue new keys to our workers and support staff in order
+                      to perform the necessary updates and examinations. Upon
+                      completion of our duties, you can disable the provided
+                      keys or configure the tooling to automate this process
+                      such that no-one can get into your infrastructure until
+                      the next time you enable the keys again.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion" data-accordion>
+                    <div data-control>
+                      <h2>How do you monitor my resources?</h2>
+                    </div>
+                    <div data-content>
+                      <p>We provision keys within your IaaS project that grant
+                      us read-only access into the metrics of the relevant
+                      resources on your account which we then use to monitor
+                      your environment. You have the ability to disable these
+                      keys at your discretion which will prevent us from
+                      monitoring your resources.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion" data-accordion>
+                    <div data-control>
+                      <h2>What happens when I need to customize my infrastructure?</h2>
+                    </div>
+                    <div data-content>
+                      <p>You can add and modify resources as necessary and
+                      interact with them through the resources under care. If
+                      you need to modify resources under care, we can probably
+                      offer solutions from our catalog of tested configurations
+                      that could serve your purpose. If your use-case
+                      represents an edge-case for which we have no clear-cut
+                      answer, we can support you in finding a path to a solution.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion" data-accordion>
+                    <div data-control>
+                      <h2>What happens to my resources if I walk away from my plan?</h2>
+                    </div>
+                    <div data-content>
+                      <p>Since you own your resources, you can terminate our
+                      service and keep running your infrastructure. Upon
+                      termination, we would no longer be able to monitor your
+                      setup, offer incident support or execute maintenance
+                      activities.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion no-border" data-accordion>
+                    <div data-control>
+                      <h2>How will I maintain the infrastructure post-termination?</h2>
+                    </div>
+                    <div data-content>
+                      <p>You will be in possession of the necessary tooling to
+                      manage your setup. All declarative resources used to
+                      provision and maintain your infrastructure will be
+                      provided to you which your devops team can use.
+                      </p>
+                    </div>
+                  </div> <!-- accordion -->
+                  <div class="accordion no-border" data-accordion>
+                    <div data-control>
+                      <h2>What happens to my resources if I walk away from my plan?</h2>
+                    </div>
+                    <div data-content>
+                      <p>Since you own your resources, you can terminate our
+                      service and keep running your infrastructure. Upon
+                      termination, we would no longer be able to monitor your
+                      setup, offer incident support or execute maintenance
+                      activities.
+                      </p>
+                    </div>
+                  </div> <!-- accordion -->
                 </div>
               </div>
             </div>
