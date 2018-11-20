@@ -34,13 +34,37 @@
   color: #563D7C;
 }
 
+.buis .navbar-brand span {
+  display: none;
+}
 .buis .nav-white .nav-item .nav-link {
   color: #FFFFFF;
 }
+.buis .nav-white .navbar-brand:before {
+  background: url(/assets/images/logo.png) no-repeat left/100%;
+  content: "";
+  display: inline-block;
+  overflow: hidden;
+  height: 25px;
+  margin-right: 15px;
+  width: 25px;
+}
+@media only screen and (max-width: 768px) {
+  .buis .nav-white .navbar-brand:before {
+    background: url(/assets/images/logo-dark.png) no-repeat left/100%;
+  }
+}
+.buis .past-main .container .navbar-brand:before,
+.buis .past-main .nav-white .navbar-brand:before {
+  background: url(/assets/images/logo-dark.png) no-repeat left/100%;
+}
 .buis .nav-white .navbar-brand {
+  font-size: 0.9rem;
 	color: #FFFFFF;
 }
-
+.buis .nav-white .navbar-brand em {
+  /*padding: .5rem .1rem;*/
+}
 .buis .nav-white .nav-item .nav-link:hover {
   color: #F1F1F1;
 }
