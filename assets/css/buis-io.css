@@ -20,6 +20,10 @@
   font-weight: 700;
 }
 @media only screen and (max-width: 768px) {
+  .buis .navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
   .buis h1,
   .buis .faq .faq-intro h1
   {
