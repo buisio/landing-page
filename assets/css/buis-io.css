@@ -1,9 +1,31 @@
 /* buis.io specific stylings */
 
+.buis {
+  color: #000;
+}
+
+.buis #faq h2,
+.buis #faq h3 {
+  color: #000;
+}
+.buis p {
+  color: #898989;
+}
+
 /* navbar */
-.buis .features h1 {
+.buis h1,
+.buis .faq .faq-intro h1
+{
   font-size: 48px;
   font-weight: 700;
+}
+@media only screen and (max-width: 768px) {
+  .buis h1,
+  .buis .faq .faq-intro h1
+  {
+    font-size: 32px;
+    font-weight: 700;
+  }
 }
 .buis .navbar-nav .nav-item {
   color: #563D7C;
@@ -97,6 +119,11 @@
   */
   background: url(../images/buis-hero.png) no-repeat center center;
 	background-size: cover;
+}
+.buis .hero-home p,
+.buis .cta-big p
+{
+  color: white;
 }
 
 /* footer */
