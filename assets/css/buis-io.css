@@ -29,7 +29,13 @@
 .buis .past-main .container .navbar-brand,
 .buis .past-main .container .navbar-collapse .navbar-nav .nav-item a.nav-link
 {
-	color: #0AF;
+	color: #000;
+}
+@media only screen and (max-width: 768px) {
+  .buis .nav-white .navbar-brand,
+  .buis .container .navbar-collapse .navbar-nav .nav-item a.nav-link {
+    color: #000;
+  }
 }
 
 /* buttons */
