@@ -139,7 +139,7 @@ $(document).ready(function() {
   $("#signup").validate({
     // if valid, post data via AJAX
     submitHandler: function(form) {
-      $.post("assets/php/subscribe.php", { email: $("#email").val() }, function(data) {
+      $.post("https://formspree.io/stack1@asabina.de", { email: $("#email").val() }, function(data) {
         $('#response').html(data);
       });
     },
