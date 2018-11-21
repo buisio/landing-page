@@ -19,6 +19,10 @@
   font-size: 48px;
   font-weight: 700;
 }
+.buis h1 em {
+  background: black;
+  color: white;
+}
 @media only screen and (max-width: 768px) {
   .buis .navbar {
     padding-top: 10px;
