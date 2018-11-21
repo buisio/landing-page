@@ -68,7 +68,7 @@
 }
 .stackone .nav-white .navbar-brand {
   font-size: 0.9rem;
-	color: #FFFFFF;
+  color: #FFFFFF;
 }
 .stackone .nav-white .navbar-brand em {
   /*padding: .5rem .1rem;*/
@@ -78,12 +78,12 @@
 }
 
 .stackone .navbar.past-main {
-	background-color: rgba(255, 255, 255, 0.99) !important;
+  background-color: rgba(255, 255, 255, 0.99) !important;
 }
 .stackone .past-main .container .navbar-brand,
 .stackone .past-main .container .navbar-collapse .navbar-nav .nav-item a.nav-link
 {
-	color: #000;
+  color: #000;
 }
 @media only screen and (max-width: 768px) {
   .stackone .nav-white .navbar-brand,
@@ -93,64 +93,58 @@
 }
 
 /* buttons */
-.stackone .btn-action,
 .stackone .btn-action:hover {
   background: black;
-	border-color: black;
-}
-.stackone .pricing-section .btn-action {
-	background-color: #0facf3;
-	border-color: #0facf3;
+  border-color: white;
+  color: white;
 }
 .stackone .btn-action {
-	color: #FFFFFF;
-}
-.stackone .btn-action:hover {
-	color: #FFFFFF;
-}
-.stackone .btn-action:focus {
-	color: #FFFFFF;
+  background: white;
+  border-color: black;
+  color: black;
 }
 .stackone .btn-send {
-  color: #FFFFFF;
+  color: white;
   background: black;
-	/*background: linear-gradient(90deg,#42b0ff,#4262ff);*/
 }
 .stackone .btn-send:hover {
-  color: #FFFFFF;
+  color: white;
   background: black;
-	/*background: linear-gradient(90deg,#4262ff,#42b0ff);*/
 }
 
 /* form */
+.stackone input {
+  font-family: "Montserrat", sans-serif;
+}
+
 .stackone .form-control:focus {
   border-color: #2e7eed;
-	background: #F4F4F4;
+  background: #F4F4F4;
 }
 .stackone textarea.form-control {
-	background: #F9F9F9;
+  background: #F9F9F9;
 }
 .stackone .contact-form .form-control {
   border-bottom-color: black;
 }
 
 .stackone .formee .right {
-  /*
-  color: #FFFFFF;
-  background-color: #387ed1;
-	background-image: linear-gradient(90deg,#42b0ff,#4262ff);
-   */
+  background: white;
+  color: black;
+}
+.stackone .formee .right:hover {
   background: black;
-  color: #FFF;
+  color: white;
+  border: 1px solid white;
 }
 
 /* hero */
 .stackone .hero-home, .stackone .cta-big {
   /*
-	background: linear-gradient(to right, rgba(106, 17, 203, 0.95), rgba(37, 117, 252, 0.95)), url(../images/world-map.png) no-repeat center center;
+  background: linear-gradient(to right, rgba(106, 17, 203, 0.95), rgba(37, 117, 252, 0.95)), url(../images/world-map.png) no-repeat center center;
   */
   background: url(../images/stack1-hero.png) no-repeat center center;
-	background-size: cover;
+  background-size: cover;
 }
 .stackone .hero-home p,
 .stackone .cta-big p
@@ -163,21 +157,21 @@
   background-color: #000;
 }
 .stackone .footer h2, .stackone .footer p, .stackone .footer p a, .stackone .footer .footer-sub {
-	color: #FFFFFF;
+  color: #FFFFFF;
 }
 .stackone .footer .footer-sub a {
-	color: #FFFFFF;
+  color: #FFFFFF;
 }
 .stackone .footer .footer-nav a, .stackone .footer a.f-mail {
-	color: #D8D8D8;
+  color: #D8D8D8;
 }
 
 .stackone .back-to-top {
-	background: black;
-	border-radius: 20px;
+  background: black;
+  border-radius: 20px;
 }
 .stackone .back-to-top:hover {
-	background: white;
+  background: white;
 }
 .stackone .back-to-top i {
   top: 6px;
