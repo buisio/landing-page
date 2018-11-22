@@ -21,6 +21,673 @@
   </head>
 
   <body data-spy="scroll" class="stackone">
-    {{ content }}
+    <div class="wrapper">
+      <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light nav-white bg-light fixed-top">
+          <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#main"><span>stack 1</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto navbar-right">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#main">Home</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#features">About</a></li>
+                <!--<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Features</a></li>-->
+                <!--<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#pricing">Pricing</a></li>-->
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#faq">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                <!--<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">Get started</a></li>-->
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div id="main" class="main">
+
+
+        {% if page.hero.enabled %}
+        <div id="top" class="hero-home">
+          <div class="container">
+            <div class="row text-center">
+              <div class="col-sm-12">
+                <div class="intro-block">
+                  <!--<h4>Focus on solutions</h4>-->
+                  <h1>{{page.hero.h1}}</h1>
+                  <p>{{page.hero.p}}</p>
+                </div>
+                {% if page.hero.form.enabled %}
+                <div class="subform wow fadeInDown" data-wow-delay="0.3s">
+                  <form id="signup" class="formee" action="https://formspree.io/stack1@asabina.de" method="post">
+                   <input name="email" id="email" type="text" /><input class="right inputnew" type="submit" title="Send" value="Request invite" />
+                  </form>
+                  <div id="response"></div>
+                </div>
+                {% endif %}
+                {% if page.hero.footnote %}
+                <div class="form-note">
+                  <p>{{page.hero.footnote}}</p>
+                </div>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div><!-- top -->
+        {% endif %}
+
+        <!-- Client Section -->
+        <!--
+        <div class="client-section">
+          <div class="container text-center">
+            <div class="clients owl-carousel owl-theme">
+              <div class="single">
+                <img src="assets/icons/client1.png" alt="Client" />
+              </div>
+              <div class="single">
+                <img src="assets/icons/client6.png" alt="Client" />
+              </div>
+              <div class="single">
+                <img src="assets/icons/client3.png" alt="Client" />
+              </div>
+              <div class="single">
+                <img src="assets/icons/client4.png" alt="Client" />
+              </div>
+              <div class="single">
+                <img src="assets/icons/client5.png" alt="Client" />
+              </div>
+              <div class="single">
+                <img src="assets/icons/client2.png" alt="Client" />
+              </div>
+            </div>
+          </div>
+        </div>
+        -->
+
+        <div id="features" class="features">
+          <div class="flex-split">
+            <div class="container">
+              <div class="row text-center">
+                <div class="col-sm-12">
+                  <h1>Ops-as-a-Service</h1>
+                </div>
+              </div>
+              <div class="row align-start">
+                <div class="col-md-4">
+                  <div class="f-left">
+                    <div class="left-content wow fadeInLeft" data-wow-delay="0s">
+                      <h2>Ship sooner.</h2>
+                      <p>Focus on your solution from day one instead of
+                      tooling. Bootstrap scalable production-grade environments
+                      without sacrificing flexibility and independence such that
+                      you don't have to consider costly, error-prone and
+                      time-consuming migrations when you'd much rather spend
+                      your resources on growth.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="f-left">
+                    <div class="left-content wow fadeInLeft" data-wow-delay="0s">
+                      <h2>Run leaner.</h2>
+                      <p>Avoid building in-house devops teams comprised of
+                      network engineers, Linux system administrators, pen
+                      testers and tooling experts when you should be focussed
+                      on building the solutions your clients care about.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="f-left">
+                    <div class="left-content wow fadeInLeft" data-wow-delay="0s">
+                      <h2 class="center">Control complexity.</h2> <!-- or Mitigate overhead? -->
+                      <p>Following the Ops-as-a-Service model, one should be
+                      able to maintain power and control over your
+                      infrastructure, while enjoying the simplicity generally
+                      offered by Software-as-a-Service solutions.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- features -->
+
+        <div id="why-need" class="cta-big">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-lg-5">
+                <div class="cta-big-inner wow fadeInRight">
+                  <h4>Why you need stack1.io</h4>
+                  <h1>Infrastructure and tooling are hard!</h1>
+                  <p>Designing the right infrastructure and selecting the
+                  proper tooling to build your solution upon is challenging,
+                  considering all the options out there.
+                  </p>
+
+                  <p>Your customers deserve that you build those solutions that
+                  they depend upon on a solid foundation.
+                  </p>
+
+                  <p>Leverage the experience and knowledge of our engineers who
+                  have already solved many of the issues that an in-house team
+                  would have to confront.
+                  </p>
+
+                  <a href="#pricing" class="btn btn-action btn-white">Start now!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- why-need -->
+
+        <!--
+        <div id="services" class="lbl-services">
+          <div class="container">
+            <div class="row justify-center">
+              <div class="col-md-8">
+                <div class="service-intro text-center">
+                 <h1 class="wow fadeInDown">Designed for startups to excel.</h1>
+                 <h6>
+                   Best in class big data software and analytics services will render your huge chunks into meaningful
+                  data. Try the demo now.
+                </h6>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4 wow fadeInDown" data-wow-delay="0.1s">
+                <div class="lbl-service-card">
+                  <div class="card-icon">
+                    <img src="assets/icons/pricing-1.png" width="60" alt="Feature">
+                  </div>
+                  <div class="card-text">
+                    <h1>Cart Management</h1>
+                    <p>Big data software and analytics services will render your huge chunks into meaningful data.
+                      Try it now.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 wow fadeInDown" data-wow-delay="0.1s">
+                <div class="lbl-service-card">
+                  <div class="card-icon">
+                    <img src="assets/icons/downloads.png" width="60" alt="Feature">
+                  </div>
+                  <div class="card-text">
+                    <h1>Unlimited Downloads</h1>
+                    <p>Big data software and analytics services will render your huge chunks into meaningful data.
+                      Try it now.</p>                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 wow fadeInDown" data-wow-delay="0.1s">
+                <div class="lbl-service-card">
+                  <div class="card-icon">
+                    <img src="assets/icons/projects.png" width="60" alt="Feature">
+                  </div>
+                  <div class="card-text">
+                    <h1>Personal Projects</h1>
+                    <p>Big data software and analytics services will render
+                    your huge chunks into meaningful data. Try it now.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>--><!-- services -->
+
+        <!--
+        <div class="vid-feature">
+          <div class="container">
+            <div class="row text-center">
+              <div class="col-sm-8 col-lg-6">
+                <h1>Building Statups to Excel - Label</h1>
+                <div class="vid-cover">
+                  <iframe src="https://www.youtube.com/embed/W-C4xu5u1ls?autoplay=0" allowfullscreen="allowfullscreen"></iframe>
+                </div>
+                <h6><b>Label</b> does more than just building a landing page, it brings life to it - <span><a href="#">Buy now</a></span></h6>
+              </div>
+            </div>
+          </div>
+        </div>--><!-- vid-feature -->
+
+        <!-- f-box Section Starts -->
+        <!--
+        <div class="f-box">
+          <div class="container">
+            <div class="row text-center">
+              <div class="col-sm-4">
+                <div class="f-box-single wow fadeInUp" data-wow-delay="0.6s">
+                  <div class="f-box-image">
+                    <img  src="assets/icons/growth.png" alt="Icon" />
+                  </div>
+                  <div class="f-box-content">
+                    <h3>Growth Charts</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, ei pro unum forensibus. His quis doming eu. Has no tollit detracto.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="f-box-single wow fadeInUp" data-wow-delay="1.2s">
+                  <div class="f-box-image">
+                    <img  src="assets/icons/mobile.png" alt="Icon" />
+                  </div>
+                  <div class="f-box-content">
+                    <h3>Mobile Responsive</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, ei pro unum forensibus. His quis doming eu. Has no tollit detracto.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="f-box-single wow fadeInUp" data-wow-delay="1.8s">
+                  <div class="f-box-image">
+                    <img  src="assets/icons/safe.png" alt="Icon" />
+                  </div>
+                  <div class="f-box-content">
+                    <h3>Highly Secure</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, ei pro unum forensibus. His quis doming eu. Has no tollit detracto.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        -->
+        <!-- f-box Section Ends Here -->
+
+        <!--
+        <div id="pricing" class="pricing-section text-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="pricing-intro">
+                  <h1 class="wow fadeInDown" data-wow-delay="0s">Our Pricing Plans.</h1>
+                  <p class="wow fadeInDown" data-wow-delay="0.2s">
+                    Get the right plan that suits your effort.
+                  </p>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="table-left wow fadeInDown" data-wow-delay="0.4s">
+
+                      <div class="pricing-details">
+                        <h2>Validate</h2>
+                        <span>&euro; 30.00/mo</span>
+                         <ul>
+                           <li>community support</li>
+                           <li>1 environment</li>
+                           <li>Access to validate-tier service catalog</li>
+                         </ul>
+                        <button class="btn btn-primary btn-action" type="button">Go Validate</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="table-right wow fadeInDown" data-wow-delay="0.6s">
+
+                      <div class="pricing-details">
+                        <h2>Live</h2>
+                        <span>&euro; 100.00/mo</span>
+                        <ul>
+                          <li>4 support hours</li>
+                          <li>3 environments</li>
+                          <li>Access to full service catalog</li>
+                        </ul>
+                        <button class="btn btn-primary btn-action" type="button">Go Live</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="table-right wow fadeInDown" data-wow-delay="0.6s">
+
+                      <div class="pricing-details">
+                       <h2>Hyper</h2>
+                       <span>&euro; 850.00/mo</span>
+                       <ul>
+                         <li>Assigned devops solution architect</li>
+                         <li>5 environments</li>
+                         <li>Access to full service catalog</li>
+                       </ul>
+                       <button class="btn btn-primary btn-action" type="button">Go Hyper</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>--><!-- pricing -->
+
+        <div id="faq" class="faq">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="faq-intro text-center">
+                  <h1>Frequently asked questions</h1>
+                  <!--<p>Drop us a word if your questions isn't listed here. Well get to you within 24 hours</p>-->
+                </div>
+                <div data-accordion-group class="accordion-box">
+                  <div class="accordion" data-accordion>
+                    <div data-control>
+                      <h2>Why would Ops-as-a-Service by stack1.io make sense
+                        for me?
+                      </h2>
+                    </div>
+                    <div data-content>
+                      <p>Ops-as-a-Service will make sense for as it buys you
+                      more space and time to focus on your product.
+                      Designing and operating infrastructure in-house often
+                      don't improve the quality of your service and they
+                      definitely don't always result to an increase in your
+                      ability to ship solutions to your end-users.
+                      </p>
+                      <p>You probably hire an accountant such that you don't
+                      have to sweat over every detail, as long as the big
+                      picture makes sense. You probably hire plumbers to fix
+                      pipes even if you could probably do some of it yourself.
+                      Experts have a way of buying you time and peace of mind
+                      by doing something faster and qualitatively better than
+                      you could have possibly done it. All this while you are
+                      working on other things that are more valuable to your
+                      organization in the end.
+                      </p>
+                      <p>If you are a data-science shop, you could spend your
+                      budget on more brilliant data scientists and less on
+                      devops and tooling engineers, since a smaller team of
+                      devops engineers will be able to accommodate your
+                      needs with less stress. You will still be building your
+                      own tech, but at least your focus will be on your core
+                      product.
+                      </p>
+                      <p>As an IoT device manufacturer you can focus your
+                      resources on building the devices your customers want,
+                      need and deserve. Your resources can be directed towards
+                      better electrical engineering and industrial design
+                      talent as the use of stack1.io limits the scope of work and
+                      responsibilities for your devops teams without
+                      relinquishing them of ownership of your environment.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion" data-accordion>
+                    <div data-control>
+                      <h2>Who owns the resources that my workloads run on?</h2>
+                    </div>
+                    <div data-content>
+                      <p>You own the infrastructure. We only cover ops which
+                      means that we provision and manage the resources at your
+                      Infrastructure-as-a-Service vendor.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion" data-accordion>
+                    <div data-control>
+                      <h2>How do you manage resources within my IaaS
+                        (Infrastructure-as-a-Service) account?
+                      </h2>
+                    </div>
+                    <div data-content>
+                      <p>You provide us a key with the necessary permissions
+                      which we use to provision resources or manage your
+                      configuration.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion" data-accordion>
+                    <div data-control>
+                      <h2>Do you always have access to my resources?</h2>
+                    </div>
+                    <div data-content>
+                      <p>No, we offer tooling to allow you to disable the
+                      provided keys when there is no work to be done.
+                      Furthermore you can use this tooling to provision and
+                      issue new keys to our workers and support staff in order
+                      to perform the necessary updates and examinations. Upon
+                      completion of our duties, you can disable the provided
+                      keys or configure the tooling to automate this process
+                      such that no-one can get into your infrastructure until
+                      the next time you enable the keys again.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion" data-accordion>
+                    <div data-control>
+                      <h2>How do you monitor my resources?</h2>
+                    </div>
+                    <div data-content>
+                      <p>We provision keys within your IaaS project that grant
+                      us read-only access to the relevant metrics only which we
+                      then use to monitor your environment. You have the
+                      ability to disable these keys at your discretion which
+                      will prevent us from monitoring your resources.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion" data-accordion>
+                    <div data-control>
+                      <h2>What happens when I need to customize my
+                        infrastructure?
+                      </h2>
+                    </div>
+                    <div data-content>
+                      <p>You can add and modify resources as necessary and
+                      interact with them through the resources under care. If
+                      you need to modify resources under care, we can probably
+                      offer solutions from our catalog of tested configurations
+                      that could serve your purpose. If your use-case
+                      represents an edge-case for which we have no clear-cut
+                      answer, we can support you in finding a path to a solution.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion no-border" data-accordion>
+                    <div data-control>
+                      <h2>How will I maintain the infrastructure
+                        post-termination?
+                      </h2>
+                    </div>
+                    <div data-content>
+                      <p>You will be in possession of the necessary tooling to
+                      manage your setup. All declarative resources used to
+                      provision and maintain your infrastructure will be
+                      provided to you such that your devops team can maintain
+                      your environments.
+                      </p>
+                    </div>
+                  </div> <!-- accordion -->
+                  <div class="accordion" data-accordion>
+                    <div data-control><span><i class="icon-bar"></i></span>
+                      <h2>What is the difference between using managed services
+                        like Kubernetes on GCP, AWS, Azure, OpenStack
+                        providers, etc.?
+                      </h2>
+                    </div>
+                    <div data-content>
+                      <p>Managed service such as the managed Kubernetes
+                      offering by many providers require some form of
+                      configuration. Details such as migration pipelines,
+                      networking policies (including routing and firewall
+                      rules), machine attributes and security policies are
+                      among some of the many features that will need to be
+                      defined in many cases. Contrarily, we offer solutions
+                      that simplify the migration of solutions between
+                      providers in case you at some point decide to move your
+                      workloads from AWS to OpenStack, for example.
+                      </p>
+                    </div>
+                  </div><!-- accordion -->
+                  <div class="accordion" data-accordion>
+                    <div data-control><span><i class="icon-bar"></i></span>
+                      <h2>How would I benefit, as provisioning machines in the
+                        cloud is relatively easy?
+                      </h2>
+                    </div>
+                    <div data-content>
+                      <p>With our Ops-as-a-Service offering, you can avoid
+                      thinking about the administrative details and focus
+                      on the topics that make a difference for your organization.
+                      </p>
+                      <p>A practical environment to deploy software is a bit
+                      more than just a machine. We'll provide you with
+                      user-friendly mechanism to deploy code within teams of
+                      varying sizes, tooling for managing versioning of the
+                      deployed resources, tooling to enforce your organization's
+                      security policies and generate the necessary audit
+                      reports to meet compliance requirements, documentation on
+                      managing your environment and continuous updates to cover
+                      security fixes and improvements in the tooling that your
+                      organization depends on.
+                      </p>
+                      <p>We employ best-practices and run extensive tests on
+                      the configurations that we provide in order to allow you
+                      to have confidence in the foundation that your
+                      organization depends on and save you the burden of having
+                      to keep up with all the updates with regards to the many
+                      tools that facilitate the operation of a organization in
+                      the cloud.
+                      </p>
+                    </div>
+                  </div><!-- accordion -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- faq -->
+
+        <div id="why-want" class="cta-big">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-lg-5">
+                <div class="cta-big-inner wow fadeInRight">
+                  <h4>Why you want stack1.io</h4>
+                  <h1>Flexibility and best-practices.</h1>
+
+                  <p>Enjoy access to the continually improving source of the
+                  declarative configurations that define your stack.
+                  </p>
+
+                  <p>Leverage our support when modifying the setup or tackling
+                  issues in your setups.
+                  </p>
+
+                  <p>Our solutions are designed to use well-established tools
+                  and implement best practices such that you can march forward
+                  with confidence.
+                  </p>
+
+                  <a href="#pricing" class="btn btn-action btn-white">Start now!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- why-want -->
+
+        <div id="contact" class="contact">
+          <div class="container">
+            <div class="row text-center">
+              <div class="col-sm-8 offset-sm-2 text-center">
+                <div class="contact-intro wow fadeInDown">
+                  <h1>How can we serve you?</h1>
+                </div>
+              </div>
+              <div class="col-sm-8 offset-sm-2">
+                <div class="contact-form wow fadeInDown">
+                    <form id="contact-form" method="post" action="https://formspree.io/stack1@asabina.de">
+                      <div class="messages"></div>
+                      <div class="controls">
+                      <div class="row">
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label for="form_name">Name (Role) *</label>
+                                  <input id="form_name" type="text" name="name" class="form-control" required="required" data-error="Firstname is required.">
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label for="form_email">Email *</label>
+                                  <input id="form_email" type="email" name="email" class="form-control" required="required" data-error="Valid email is required.">
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                          </div>
+                        </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="form_message">What does your organization do and what does your organization currently need? *</label>
+                                <textarea id="form_message" name="message" class="form-control" rows="4" required="required" data-error="Explain what you do and which tooling you need?."></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                          <input type="submit" class="btn btn-success btn-send" value="Open case">
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- contact -->
+
+        <div class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <h2>stack1.io</h2>
+                <p>developed and operated by <a href="https://asabina.de">Asabina GmbH</a></p>
+                <ul class="footer-sub">
+                  <li>&copy; 2018 Asabina GmbH</li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Legal</a></li>
+                </ul>
+              </div>
+              <div class="col-md-6 text-right d-none d-md-block">
+                <ul class="social">
+                  <!--<li><a href="#"><img src="assets/icons/facebook.png" width="35" alt="Social"></a></li>-->
+                  <li><a href="#"><img src="assets/icons/twitter.png" width="35" alt="Social"></a></li>
+                  <li><a href="#"><img src="assets/icons/youtube.png" width="35" alt="Social"></a></li>
+                  <!--<li><a href="#"><img src="assets/icons/instagram.png" width="35" alt="Social"></a></li>-->
+                </ul>
+                <ul class="footer-nav">
+                  <li><a href="#features">About</a></li>
+                  <li><a href="#">Support</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+                <!--<a class="f-mail" href="tel:180032472349">Call: 1800 3247 2349</a> <br>-->
+                <a class="f-mail" href="mailto:info@stack1.io">info@stack1.io</a>
+              </div>
+            </div>
+          </div>
+        </div><!-- footer -->
+
+        <!-- Scroll To Top -->
+          <a id="back-top" class="back-to-top js-scroll-trigger" href="#main">
+          <i class="ion-android-navigate"></i>
+          </a>
+        <!-- Scroll To Top Ends-->
+      </div> <!-- Main -->
+    </div><!-- Wrapper -->
+
+    <!-- Jquery and Js Plugins -->
+    <script src="assets/js/jquery-2.1.1.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/jquery.accordion.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/validator.js"></script>
+    <script src="assets/js/contact.js"></script>
+
+    <script src="assets/js/custom.js"></script>
   </body>
 </html>
