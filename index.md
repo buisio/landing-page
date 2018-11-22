@@ -1,4 +1,18 @@
 ---
+title: Ops as a Service
+description: |
+  Accelerate to day one with stack one. Spend less time designing and tweaking
+  infrastructure and spend more time our your actual product. Use Stack One to
+  deploy infrastructure on AWS, Azure, GCP or OpenStack and start shipping your
+  product today.
+keywords:
+ - devops
+ - infrastructure
+ - cloud
+ - on-premise
+ - provisioning
+ - service
+ - operations
 layout: home
 hero:
   enabled: true
