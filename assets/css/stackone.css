@@ -45,7 +45,8 @@
 .stackone .navbar-brand span {
   display: none;
 }
-.stackone .nav-white .nav-item .nav-link {
+
+.stackone .navbar .nav-item .nav-link {
   color: #FFFFFF;
 }
 .stackone .nav-white .navbar-brand:before {
@@ -58,39 +59,66 @@
   width: 25px;
 }
 @media only screen and (max-width: 768px) {
-  .stackone .nav-white .navbar-brand:before {
+  .stackone .navbar.navbar-light .navbar-brand:before {
     background: url(/assets/images/logo-dark.png) no-repeat left/100%;
   }
+  .stackone .navbar.navbar-dark .navbar-brand:before {
+    background: url(/assets/images/logo.png) no-repeat left/100%;
+  }
 }
-.stackone .past-main .container .navbar-brand:before,
-.stackone .past-main .nav-white .navbar-brand:before {
+.stackone .navbar.past-main .navbar-brand:before {
+  background: url(/assets/images/logo.png) no-repeat left/100%;
+}
+.stackone .navbar.navbar-light.past-main .navbar-brand:before {
   background: url(/assets/images/logo-dark.png) no-repeat left/100%;
 }
-.stackone .nav-white .navbar-brand {
+.stackone .navbar .navbar-brand {
   font-size: 0.9rem;
   color: #FFFFFF;
 }
-.stackone .nav-white .navbar-brand em {
+.stackone .navbar .navbar-brand em {
   /*padding: .5rem .1rem;*/
 }
-.stackone .nav-white .nav-item .nav-link:hover {
+.stackone .navbar .nav-item .nav-link:hover {
   color: #F1F1F1;
 }
 
 .stackone .navbar.past-main {
   background-color: rgba(255, 255, 255, 0.99) !important;
 }
-.stackone .past-main .container .navbar-brand,
-.stackone .past-main .container .navbar-collapse .navbar-nav .nav-item a.nav-link
+.stackone .past-main .container .navbar-brand {
+  color: #000;
+}
+.stackone .navbar-light.past-main .container .navbar-collapse .navbar-nav .nav-item a.nav-link
 {
   color: #000;
 }
+.stackone .navbar-dark.past-main .container .navbar-collapse .navbar-nav .nav-item a.nav-link
+{
+  color: #fff;
+}
+
 @media only screen and (max-width: 768px) {
-  .stackone .nav-white .navbar-brand,
+  .stackone .navbar .navbar-brand,
   .stackone .container .navbar-collapse .navbar-nav .nav-item a.nav-link {
     color: #000;
   }
+  .stackone .navbar.navbar-dark {
+    color: #fff;
+    background: black!important;
+  }
 }
+
+.stackone .navbar.navbar-dark.past-main
+{
+  color: white;
+  background: black!important;
+}
+.stackone .navbar.navbar-dark.past-main
+{
+  background: url(/assets/images/logo.png) no-repeat left/100%;
+}
+
 
 /* buttons */
 .stackone .btn-action:hover {
