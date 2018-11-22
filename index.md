@@ -1,6 +1,12 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
+hero:
+  enabled: true
+  h1: Build your tech, not your stack
+  p: |
+    Spend more effort on your product that would otherwise be spent on
+    infrastructure and tooling.
+  form:
+    enabled: true
+  footnote: Supporting AWS, Azure, GCP and OpenStack
 ---
