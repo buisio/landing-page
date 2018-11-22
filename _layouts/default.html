@@ -77,32 +77,19 @@
         {% endif %}
 
         <!-- Client Section -->
-        <!--
+        {% if page.clients and page.clients.size > 0 %}
         <div class="client-section">
           <div class="container text-center">
             <div class="clients owl-carousel owl-theme">
+              {% for client in page.clients %}
               <div class="single">
-                <img src="assets/icons/client1.png" alt="Client" />
+                <img src="{{client.image}}" alt="{{client.name}}" />
               </div>
-              <div class="single">
-                <img src="assets/icons/client6.png" alt="Client" />
-              </div>
-              <div class="single">
-                <img src="assets/icons/client3.png" alt="Client" />
-              </div>
-              <div class="single">
-                <img src="assets/icons/client4.png" alt="Client" />
-              </div>
-              <div class="single">
-                <img src="assets/icons/client5.png" alt="Client" />
-              </div>
-              <div class="single">
-                <img src="assets/icons/client2.png" alt="Client" />
-              </div>
+              {% endfor %}
             </div>
           </div>
         </div>
-        -->
+        {% endif %}
 
         <div id="features" class="features">
           <div class="flex-split">
