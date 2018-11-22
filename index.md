@@ -23,7 +23,7 @@ hero:
   form:
     enabled: true
   footnote: Supporting AWS, Azure, GCP and OpenStack
-clients:
-#- name: Information
-#  image: assets/icons/client1.png
+#clients:
+# - name: Information
+#   image: assets/icons/client1.png
 ---
