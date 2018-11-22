@@ -278,7 +278,7 @@ layout: default
   </div>
 </div>--><!-- pricing -->
 
-{% if page.faq and page.faq.size > 0 %}
+{% if site.data.faq and site.data.faq.size > 0 %}
 <div id="faq" class="faq">
   <div class="container">
     <div class="row">
@@ -288,7 +288,7 @@ layout: default
           <!--<p>Drop us a word if your questions isn't listed here. Well get to you within 24 hours</p>-->
         </div>
         <div data-accordion-group class="accordion-box">
-          {% for pair in page.faq %}
+          {% for pair in site.data.faq %}
           <div class="accordion" data-accordion>
             <div data-control>
               <h2>{{ pair.q }}</h2>

@@ -26,35 +26,4 @@ hero:
 clients:
 #- name: Information
 #  image: assets/icons/client1.png
-faq:
-- q: Why would Ops-as-a-Service by stack1.io make sense for me?
-  a: |
-    Ops-as-a-Service will make sense for as it buys you more space and time to focus on your product.  Designing and operating infrastructure in-house often don't improve the quality of your service and they definitely don't always result to an increase in your ability to ship solutions to your end-users.
-
-    You probably hire an accountant such that you don't have to sweat over every detail, as long as the big picture makes sense. You probably hire plumbers to fix pipes even if you could probably do some of it yourself.  Experts have a way of buying you time and peace of mind by doing something faster and qualitatively better than you could have possibly done it. All this while you are working on other things that are more valuable to your organization in the end.
-
-    If you are a data-science shop, you could spend your budget on more brilliant data scientists and less on devops and tooling engineers, since a smaller team of devops engineers will be able to accommodate your needs with less stress. You will still be building your own tech, but at least your focus will be on your core product.
-
-    As an IoT device manufacturer you can focus your resources on building the devices your customers want, need and deserve. Your resources can be directed towards better electrical engineering and industrial design talent as the use of stack1.io limits the scope of work and responsibilities for your devops teams without relinquishing them of ownership of your environment.
-- q: Who owns the resources that my workloads run on?
-  a: You own the infrastructure. We only cover ops which means that we provision and manage the resources at your Infrastructure-as-a-Service vendor.
-- q: How do you manage resources within my IaaS (Infrastructure-as-a-Service) account?
-  a: You provide us a key with the necessary permissions which we use to provision resources or manage your configuration.
-- q: Do you always have access to my resources?
-  a: No, we offer tooling to allow you to disable the provided keys when there is no work to be done. Furthermore you can use this tooling to provision and issue new keys to our workers and support staff in order to perform the necessary updates and examinations. Upon completion of our duties, you can disable the provided keys or configure the tooling to automate this process such that no-one can get into your infrastructure until the next time you enable the keys again.
-- q: How do you monitor my resources?
-  a: We provision keys within your IaaS project that grant us read-only access to the relevant metrics only which we then use to monitor your environment. You have the ability to disable these keys at your discretion which will prevent us from monitoring your resources.
-- q: What happens when I need to customize my infrastructure?
-  a: You can add and modify resources as necessary and interact with them through the resources under care. If you need to modify resources under care, we can probably offer solutions from our catalog of tested configurations that could serve your purpose. If your use-case represents an edge-case for which we have no clear-cut answer, we can support you in finding a path to a solution.
-- q: How will I maintain the infrastructure post-termination?
-  a: You will be in possession of the necessary tooling to manage your setup. All declarative resources used to provision and maintain your infrastructure will be provided to you such that your devops team can maintain your environments.
-- q: What is the difference between using managed services like Kubernetes on GCP, AWS, Azure, OpenStack providers, etc.?
-  a: Managed service such as the managed Kubernetes offering by many providers require some form of configuration. Details such as migration pipelines, networking policies (including routing and firewall rules), machine attributes and security policies are among some of the many features that will need to be defined in many cases. Contrarily, we offer solutions that simplify the migration of solutions between providers in case you at some point decide to move your workloads from AWS to OpenStack, for example.
-- q: How would I benefit, as provisioning machines in the cloud is relatively easy?
-  a: |
-    With our Ops-as-a-Service offering, you can avoid thinking about the administrative details and focus on the topics that make a difference for your organization.
-    
-    A practical environment to deploy software is a bit more than just a machine. We'll provide you with user-friendly mechanism to deploy code within teams of varying sizes, tooling for managing versioning of the deployed resources, tooling to enforce your organization's security policies and generate the necessary audit reports to meet compliance requirements, documentation on managing your environment and continuous updates to cover security fixes and improvements in the tooling that your organization depends on.
-
-    We employ best-practices and run extensive tests on the configurations that we provide in order to allow you to have confidence in the foundation that your organization depends on and save you the burden of having to keep up with all the updates with regards to the many tools that facilitate the operation of a organization in the cloud.
 ---
