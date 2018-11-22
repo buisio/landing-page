@@ -85,8 +85,11 @@
   /*padding: .5rem .1rem;*/
 }
 
-.stackone .navbar.past-main {
-  background-color: rgba(255, 255, 255, 1);
+.stackone .navbar-light.past-main {
+  background-color: #fff!important;
+}
+.stackone .navbar-dark.past-main {
+  background-color: #000!important;
 }
 .stackone .navbar.past-main .container .navbar-brand {
   color: #000;
