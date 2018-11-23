@@ -27,7 +27,7 @@ hero:
 # - name: Information
 #   image: assets/icons/client1.png
 contact: true
-banner: /assets/assets/images/stack1-hero.png
+banner: /assets/images/stack1-hero.png
 author:
   name: Stack One
 ---
