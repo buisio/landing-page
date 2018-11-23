@@ -14,8 +14,6 @@
     {% if page.author.name %}
     <meta name="author" content="{{page.author.name}}">
     {% endif %}
-    <meta name="description" content="{{page.description}}">
-    <meta name="description" property="og:description" content="{{page.description}}">
     <meta name="keywords" content="{{page.keywords | join: "," }}">
 
     <meta name="twitter:card" content="summary">
@@ -28,6 +26,7 @@
     <meta name="twitter:title" content="{{page.title}}">
     {% if page.unicode_description %}
     <meta name="twitter:description" content="{{page.unicode_description}}">
+    <meta name="description" property="og:description" content="{{page.unicode_description}}">
     <meta name="description" property="og:description" content="{{page.unicode_description}}">
     {% else %}
     {% if page.description %}
