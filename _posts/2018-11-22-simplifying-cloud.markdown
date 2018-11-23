@@ -12,6 +12,9 @@ dark:
 banner: /assets/images/posts/clouds-blue-bg240-rainbow.png
 enabled: true
 contact: true
+author:
+  name: David Asabina
+  twitter: vidbina
 ---
 ## Getting it right is hard
 
