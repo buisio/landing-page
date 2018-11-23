@@ -26,4 +26,5 @@ hero:
 #clients:
 # - name: Information
 #   image: assets/icons/client1.png
+contact: true
 ---
