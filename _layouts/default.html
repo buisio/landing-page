@@ -21,16 +21,19 @@
     <meta name="twitter:site" content="@{{site.twitter_username}}">
     <meta name="twitter:creator" content="@{{page.author.twitter}}">
     <meta name="twitter:title" content="{{page.title}}">
-    {% if page.twitter_description %}
-    <meta name="twitter:description" content="{{page.twitter_description}}">
+    {% if page.unicode_description %}
+    <meta name="twitter:description" content="{{page.unicode_description}}">
+    <meta name="description" property="og:description" content="{{page.unicode_description}}">
     {% else %}
     {% if page.description %}
     <meta name="twitter:description" content="{{page.description}}">
+    <meta name="description" property="og:description" content="{{page.description}}">
     {% endif %}
     {% endif %}
 
 
     <meta name="og:url" content="{{site.url}}{{page.url}}">
+    <meta name="title" property="og:title" content="{{page.title}}">
     <meta name="og:title" content="{{page.title}}">
     {% if page.banner %}
     <meta name="og:image" content="{{site.url}}{{page.banner}}">

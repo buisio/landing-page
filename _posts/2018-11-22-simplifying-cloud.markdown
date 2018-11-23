@@ -6,7 +6,7 @@ categories: cloud tooling
 description: |
   A brief essay :scroll: on why we're setting out to simplify the way we handle
   our cloud :cloud: computing :computer: needs.
-twitter_description: |
+unicode_description: |
   A brief essay 📜 on why we're setting out to simplify the way we handle
   our cloud ☁️ computing 🖥️ needs.
 dark:
