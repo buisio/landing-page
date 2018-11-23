@@ -29,7 +29,9 @@
 
     <meta name="og:url" content="{{site.url}}{{page.url}}">
     <meta name="og:title" content="{{page.title}}">
-    <meta name="og:image" content="{{page.banner}}">
+    {% if page.banner %}
+    <meta name="og:image" content="{{site.url}}{{page.banner}}">
+    {% endif %}
 
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css" type="text/css" media="all" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600%7COpen+Sans:400%7CVarela+Round">
