@@ -10,6 +10,17 @@
     <meta name="description" content="{{page.description}}">
     <meta name="keywords" content="{{page.keywords | join: "," }}">
 
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="{{site.twitter_username}}">
+    <meta name="twitter:creator" content="{{page.author.twitter}}">
+
+
+    <meta name="og.url" content="{{site.url}}{{page.url}}">
+    <meta name="og.title" content="{{page.title}}">
+    {% if page.banner %}
+    <meta name="og:image" content="{{site.url}}/assets/{{page.banner}}">
+    {% endif %}
+
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600%7COpen+Sans:400%7CVarela+Round" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/animate.css"> <!-- Resource style -->
