@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+    {% if page.banner %}
+    <meta name="image" content="{{page.banner}}">
+    {% endif %}
+    {% if page.author.name %}
+    <meta name="author" content="{{page.author.name}}">
+    {% endif %}
     <meta name="description" content="{{page.description}}">
     <meta name="keywords" content="{{page.keywords | join: "," }}">
 
