@@ -89,7 +89,7 @@ layout: default
           would have to confront.
           </p>
 
-          <a href="#pricing" class="btn btn-action btn-white">Start now!</a>
+          <a href="/#pricing" class="btn btn-action btn-white js-scroll-trigger">Start now!</a>
         </div>
       </div>
     </div>
@@ -240,7 +240,7 @@ layout: default
                    {% endfor %}
                  </ul>
                  {% if plan.action %}
-                 <button class="btn btn-primary btn-action" type="button">{{ plan.action.title }}</button>
+                 <a href="{{plan.action.link}}" class="btn btn-primary btn-action js-scroll-trigger" type="button">{{ plan.action.title }}</a>
                  {% endif %}
               </div>
             </div>
@@ -300,7 +300,7 @@ layout: default
           with confidence.
           </p>
 
-          <a href="#pricing" class="btn btn-action btn-white">Start now!</a>
+          <a href="/#pricing" class="btn btn-action btn-white js-scroll-trigger">Start now!</a>
         </div>
       </div>
     </div>

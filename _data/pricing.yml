@@ -8,9 +8,12 @@ plans:
       - 1 production cluster
       - access to Terraform configuration
       - GitHub+GitLab CI/CD pipeline configurations
+    action:
+      title: Get Started
+      link: /#contact
   - name: Company
     width: 6
-    price: "&euro; 49,99/month"
+    price: "&euro; 99,99/month"
     features:
       - unlimited test clusters
       - unlimited production clusters
@@ -18,3 +21,6 @@ plans:
       - private Docker registry
       - private GitLab environment
       - CI/CD pipeline configurations
+    action:
+      title: Get Started
+      link: /#contact
