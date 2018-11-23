@@ -240,7 +240,7 @@ layout: default
                    {% endfor %}
                  </ul>
                  {% if plan.action %}
-                 <button class="btn btn-primary btn-action" type="button">{{ plan.action.title }}</button>
+                 <a href="{{plan.action.link}}" class="btn btn-primary btn-action js-scroll-trigger" type="button">{{ plan.action.title }}</a>
                  {% endif %}
               </div>
             </div>
