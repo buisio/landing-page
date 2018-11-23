@@ -1,31 +1,44 @@
+$(document).ready(function() {
 
-
-$(function () {
-  "use strict";
-
-    $('#contact-form').validator();
-
-    $('#contact-form').on('submit', function (e) {
-        if (!e.isDefaultPrevented()) {
-            var url = "https://formspree.io/stack1@asabina.de";
-
-            $.ajax({
-                type: "POST",
-                url: url,
-                data: $(this).serialize(),
-                success: function (data)
-                {
-                    var messageAlert = 'alert-' + data.type;
-                    var messageText = data.message;
-
-                    var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
-                    if (messageAlert && messageText) {
-                        $('#contact-form').find('.messages').html(alertBox);
-                        $('#contact-form')[0].reset();
-                    }
-                }
-            });
-            return false;
+  $("#contact-form").validate({
+    // if valid, post data via AJAX
+    submitHandler: function(form) {
+      $.post(
+        "https://europe-west1-asabina-infra-test.cloudfunctions.net/function-1",
+        {
+          email: $("#form_email").val(),
+          message: $("#form_message").val(),
+          name: $("#form_name").val()
         }
-    })
+      ).done(
+        function(data, status, xhr) {
+          const msg = data.msg ? data.msg : `Thank you for getting in touch. We are working down the waiting list to get to your case ASAP and discuss your needs.`
+
+          $('#contact-form').html(`<div class="alert alert-primary response">${msg}</div>`);
+        }
+      ).fail(
+        function(xhr, status, err) {
+          //console.log("fail");
+          console.log({xhr: xhr, status: status, err: err});
+        }
+      ).always(
+        function(data, ) {
+          //console.log("always");
+        }
+      );
+    },
+    // all fields are required
+    rules: {
+      email: {
+        required: true,
+        email: true
+      },
+      message: {
+        required: true
+      },
+      name: {
+        required: true
+      }
+    }
+  });
 });

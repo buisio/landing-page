@@ -59,8 +59,8 @@
                   <p>{{page.hero.p}}</p>
                 </div>
                 {% if page.hero.form.enabled %}
-                <div class="subform wow fadeInDown" data-wow-delay="0.3s">
-                  <form id="signup" class="formee" action="https://formspree.io/stack1@asabina.de" method="post">
+                <div id="signup-form-container" class="subform wow fadeInDown" data-wow-delay="0.3s">
+                  <form id="signup" class="formee" action="https://europe-west1-asabina-infra-test.cloudfunctions.net/function-1" method="POST">
                    <input name="email" id="email" type="text" /><input class="right inputnew" type="submit" title="Send" value="Request invite" />
                   </form>
                   <div id="response"></div>
