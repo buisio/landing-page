@@ -215,7 +215,7 @@ layout: default
 -->
 <!-- f-box Section Ends Here -->
 
-<!--
+{% if site.data.pricing.plans.size > 0 %}
 <div id="pricing" class="pricing-section text-center">
   <div class="container">
     <div class="row">
@@ -223,60 +223,35 @@ layout: default
         <div class="pricing-intro">
           <h1 class="wow fadeInDown" data-wow-delay="0s">Our Pricing Plans.</h1>
           <p class="wow fadeInDown" data-wow-delay="0.2s">
-            Get the right plan that suits your effort.
+          {{ site.data.pricing.description }}
           </p>
         </div>
         <div class="row">
-          <div class="col-md-4">
+          {% for plan in site.data.pricing.plans %}
+          <div class="col-md-{{plan.width}}">
             <div class="table-left wow fadeInDown" data-wow-delay="0.4s">
 
               <div class="pricing-details">
-                <h2>Validate</h2>
-                <span>&euro; 30.00/mo</span>
+                <h2>{{ plan.name }}</h2>
+                <span>{{ plan.price }}</span>
                  <ul>
-                   <li>community support</li>
-                   <li>1 environment</li>
-                   <li>Access to validate-tier service catalog</li>
+                   {% for feature in plan.features %}
+                   <li>{{ feature }}</li>
+                   {% endfor %}
                  </ul>
-                <button class="btn btn-primary btn-action" type="button">Go Validate</button>
+                 {% if plan.action %}
+                 <button class="btn btn-primary btn-action" type="button">{{ plan.action.title }}</button>
+                 {% endif %}
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="table-right wow fadeInDown" data-wow-delay="0.6s">
-
-              <div class="pricing-details">
-                <h2>Live</h2>
-                <span>&euro; 100.00/mo</span>
-                <ul>
-                  <li>4 support hours</li>
-                  <li>3 environments</li>
-                  <li>Access to full service catalog</li>
-                </ul>
-                <button class="btn btn-primary btn-action" type="button">Go Live</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="table-right wow fadeInDown" data-wow-delay="0.6s">
-
-              <div class="pricing-details">
-               <h2>Hyper</h2>
-               <span>&euro; 850.00/mo</span>
-               <ul>
-                 <li>Assigned devops solution architect</li>
-                 <li>5 environments</li>
-                 <li>Access to full service catalog</li>
-               </ul>
-               <button class="btn btn-primary btn-action" type="button">Go Hyper</button>
-              </div>
-            </div>
-          </div>
+          {% endfor %}
         </div>
       </div>
     </div>
   </div>
-</div>--><!-- pricing -->
+</div><!-- pricing -->
+{% endif %}
 
 {% if site.data.faq and site.data.faq.size > 0 %}
 <div id="faq" class="faq">

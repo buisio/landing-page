@@ -1,0 +1,20 @@
+description: Find the plan that suits your needs.
+plans:
+  - name: Basic
+    width: 6
+    price: "&euro; 19,99/month"
+    features:
+      - 1 test cluster
+      - 1 production cluster
+      - access to Terraform configuration
+      - GitHub+GitLab CI/CD pipeline configurations
+  - name: Company
+    width: 6
+    price: "&euro; 49,99/month"
+    features:
+      - unlimited test clusters
+      - unlimited production clusters
+      - access to Terraform configurations
+      - private Docker registry
+      - private GitLab environment
+      - CI/CD pipeline configurations
