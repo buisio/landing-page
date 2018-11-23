@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  Simplifying Cloud
-date:   2018-11-22 10:50:51 +0000
+title: Simplifying Cloud
+date:  2018-11-22 10:50:51 +0000
 categories: cloud tooling
 description: |
   A brief essay :scroll: on why we're setting out to simplify the way we handle
   our cloud :cloud: computing :computer: needs.
 unicode_description: |
-  A brief essay 📜 on why we're setting out to simplify the way we handle
-  our cloud ☁️ computing 🖥️ needs.
+  A brief essay on why we're setting out to simplify the way we handle
+  our cloud computing needs.
 dark:
   hero: true
   title: true
@@ -19,6 +19,7 @@ author:
   name: David Asabina
   twitter: vidbina
 ---
+
 ## Getting it right is hard
 
 With all the developments we've seen in terms of automation which include
@@ -41,13 +42,12 @@ Teams should be able to provision decent working environments on their provider
 of choice while maintaining full ownership of said environments and we are
 building some tooling to make that happen.
 
-If you're familiar with Heroku, we're trying to set up somthing as simple as
-that. In the end we just want you to think about git pushes and see everything
-materialize like magic :sparkles:.
+In the end we just want you to think about git pushes and see everything
+materialize like magic.
 
-## First lean steps :baby:
+## First lean steps
 
-Our first step was to distil our learnings over the last couple of years down
+Our first step was to distil our learnings from the last couple of years down
 to a few parameterized configurations that we can deploy and operate with a
 collection of known and trusted tools such as Docker, Kubernetes and Terraform,
 among others. Much of our previous work was directed at building setups on
@@ -57,8 +57,8 @@ platform.
 
 We have also done work on Alibaba Cloud, AWS, Azure and OpenStack-compliant
 providers, but we're trying really hard to not get overexcited and try to build
-configurations for all providers :grin: which is simply not a responsible
-effort at this point. Discipline is hard :say_no_evil:.
+configurations for all providers which is simply not a responsible
+effort at this point.
 
 We haven't <em>fully automated</em> any of this yet in an effort to remain
 lean, as we're basically learning the needs of our existing customers and the
@@ -71,10 +71,4 @@ it all up by themselves.
 
 If you need some help with infrastructure even if you're past the stage of
 initial setup feel free to get in touch since we're eager to learn more about
-the needs of different teams out there in the wild :wink:.
-
-Hoping to learn from you.
-
-Best regards,
-
-David Asabina on behalf of the Stack One team
+the needs of different teams out there in the wild.
