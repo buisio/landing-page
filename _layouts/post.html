@@ -23,10 +23,12 @@
     {% else %}
     <meta name="twitter:creator" content="{{site.twitter_username}}">
     {% endif %}
+    <meta name="twitter:title" content="{{page.title}}">
+    <meta name="twitter:description" content="{{page.description}}">
 
 
-    <meta name="og.url" content="{{site.url}}{{page.url}}">
-    <meta name="og.title" content="{{page.title}}">
+    <meta name="og:url" content="{{site.url}}{{page.url}}">
+    <meta name="og:title" content="{{page.title}}">
     <meta name="og:image" content="{{page.banner}}">
 
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css" type="text/css" media="all" />
