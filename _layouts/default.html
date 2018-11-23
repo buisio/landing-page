@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     {% if page.banner %}
+    <meta name="image" property="og:image" content="{{site.url}}{{page.banner}}">
     <meta name="image" content="{{site.url}}{{page.banner}}">
     {% endif %}
     {% if page.author.name %}
