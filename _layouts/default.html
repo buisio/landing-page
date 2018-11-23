@@ -21,7 +21,13 @@
     <meta name="twitter:site" content="@{{site.twitter_username}}">
     <meta name="twitter:creator" content="@{{page.author.twitter}}">
     <meta name="twitter:title" content="{{page.title}}">
+    {% if page.twitter_description %}
+    <meta name="twitter:description" content="{{page.twitter_description}}">
+    {% else %}
+    {% if page.description %}
     <meta name="twitter:description" content="{{page.description}}">
+    {% endif %}
+    {% endif %}
 
 
     <meta name="og:url" content="{{site.url}}{{page.url}}">
