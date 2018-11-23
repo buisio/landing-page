@@ -1,0 +1,278 @@
+/* stackone specific stylings */
+
+.stackone {
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+}
+
+.stackone #faq h2,
+.stackone #faq h3 {
+  color: #000;
+}
+.stackone p {
+  color: #898989;
+}
+
+/* navbar */
+.article h2,
+.stackone h1,
+.stackone .faq .faq-intro h1
+{
+  font-size: 48px;
+  font-weight: 700;
+}
+.stackone h1 em {
+  background: black;
+  color: white;
+}
+@media only screen and (max-width: 768px) {
+  .stackone .navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .article h2,
+  .stackone h1,
+  .stackone .faq .faq-intro h1
+  {
+    font-size: 32px;
+    font-weight: 700;
+  }
+}
+
+.stackone .navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.stackone .navbar-dark  .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.stackone .navbar .navbar-brand span {
+  display: none;
+}
+.stackone .navbar .navbar-brand:before {
+  content: "";
+  display: inline-block;
+  overflow: hidden;
+  height: 25px;
+  margin-right: 15px;
+  width: 25px;
+}
+.stackone .navbar.navbar-light .navbar-brand:before {
+  background: url(/assets/images/logo.png) no-repeat left/100%;
+}
+.stackone .navbar.navbar-dark  .navbar-brand:before {
+  background: url(/assets/images/logo-dark.png) no-repeat left/100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .stackone .navbar.navbar-light .navbar-brand:before {
+    background: url(/assets/images/logo-dark.png) no-repeat left/100%;
+  }
+  .stackone .navbar.navbar-dark  .navbar-brand:before {
+    background: url(/assets/images/logo.png) no-repeat left/100%;
+  }
+}
+.stackone .navbar.navbar-dark.past-main  .navbar-brand:before {
+  background: url(/assets/images/logo.png) no-repeat left/100%;
+}
+.stackone .navbar.navbar-light.past-main .navbar-brand:before {
+  background: url(/assets/images/logo-dark.png) no-repeat left/100%;
+}
+.stackone .navbar .navbar-brand {
+  font-size: 0.9rem;
+  color: white;
+}
+.stackone .navbar .navbar-brand em {
+  /*padding: .5rem .1rem;*/
+}
+
+.stackone .navbar-light.past-main {
+  background-color: #fff!important;
+}
+.stackone .navbar-dark.past-main {
+  background-color: #000!important;
+}
+.stackone .navbar.past-main .container .navbar-brand {
+  color: #000;
+}
+.stackone .navbar-light.past-main .container .navbar-collapse .navbar-nav .nav-item a.nav-link
+{
+  color: #000;
+}
+.stackone .navbar-dark.past-main  .container .navbar-collapse .navbar-nav .nav-item a.nav-link
+{
+  color: #fff;
+}
+
+.stackone .navbar-light .navbar-nav .nav-item .nav-link {
+  color: white;
+}
+.stackone .navbar-dark  .navbar-nav .nav-item .nav-link {
+  color: black;
+}
+@media only screen and (max-width: 768px) {
+  .stackone .navbar .navbar-brand,
+  .stackone .navbar-light .container .navbar-collapse .navbar-nav .nav-item a.nav-link {
+    color: #000;
+  }
+  .stackone .navbar-dark  .container .navbar-collapse .navbar-nav .nav-item a.nav-link {
+    color: #fff;
+  }
+  .stackone .navbar.navbar-dark {
+    color: #fff;
+    background: #000!important;
+  }
+  .stackone .navbar.navbar-light {
+    color: #000;
+    background: #fff!important;
+  }
+}
+
+.stackone .navbar.navbar-dark.past-main
+{
+  color: white;
+  background: black!important;
+}
+.stackone .navbar.navbar-dark.past-main
+{
+  background: url(/assets/images/logo.png) no-repeat left/100%;
+}
+
+
+/* buttons */
+.stackone .btn-action:hover {
+  background: black;
+  border-color: white;
+  color: white;
+}
+.stackone .btn-action {
+  background: white;
+  border-color: black;
+  color: black;
+}
+.stackone .btn-send {
+  color: white;
+  background: black;
+}
+.stackone .btn-send:hover {
+  color: white;
+  background: black;
+}
+
+/* form */
+.stackone input {
+  font-family: "Montserrat", sans-serif;
+}
+
+.stackone .form-control:focus {
+  border-color: #2e7eed;
+  background: #F4F4F4;
+}
+.stackone textarea.form-control {
+  background: #F9F9F9;
+}
+.stackone .contact-form .form-control {
+  border-bottom-color: black;
+}
+
+.stackone .formee .right {
+  background: white;
+  color: black;
+}
+.stackone .formee .right:hover {
+  background: black;
+  color: white;
+  border: 1px solid white;
+}
+
+/* hero */
+
+.stackone .hero-home, .stackone .cta-big {
+  /*
+  background: linear-gradient(to right, rgba(106, 17, 203, 0.95), rgba(37, 117, 252, 0.95)), url(../images/world-map.png) no-repeat center center;
+  */
+  background: url(../images/stack1-hero.png) no-repeat center center;
+  background-size: cover;
+}
+.stackone .hero-home,
+.stackone .hero-home p,
+.stackone .cta-big,
+.stackone .cta-big p
+{
+  color: #fff;
+}
+
+.stackone .hero-dark h1,
+.stackone .hero-dark p
+{
+  color: #000;
+}
+
+/* footer */
+.stackone .footer {
+  background-color: #000;
+}
+.stackone .footer h2, .stackone .footer p, .stackone .footer p a, .stackone .footer .footer-sub {
+  color: #FFFFFF;
+}
+.stackone .footer .footer-sub a {
+  color: #FFFFFF;
+}
+.stackone .footer .footer-nav a, .stackone .footer a.f-mail {
+  color: #D8D8D8;
+}
+
+.stackone .back-to-top {
+  background: black;
+  border-radius: 20px;
+}
+.stackone .back-to-top:hover {
+  background: white;
+}
+.stackone .back-to-top i {
+  top: 6px;
+}
+.stackone .back-to-top:hover i {
+  color: black;
+}
+.stackone .back-to-top:focus {
+  color: #FFFFFF;
+}
+
+.stackone .container a.col-sm-4:hover {
+  text-decoration: none;
+}
+.stackone .container .col-sm-4 .f-box-single {
+  overflow: hidden;
+  padding: 0;
+}
+.stackone .container .col-sm-4 .f-box-single .f-box-image {
+  padding: 0;
+}
+.stackone .container .col-sm-4 .f-box-single .f-box-image img {
+  width: 100%;
+}
+.stackone .container .col-sm-4 .f-box-single .f-box-content
+{
+  padding: 2em 1em;
+}
+.stackone .container .col-sm-4 .f-box-single .f-box-content h3,
+.stackone .container .col-sm-4 .f-box-single .f-box-content p {
+  color: black;
+}
+.stackone .article {
+  padding: 75px 0;
+}
+.stackone .article p {
+  padding: 25px 0;
+  font-size: 16px;
+  line-height: 1.3em;
+}
+
+.stackone .highlight {
+  padding: 10px;
+  margin: 15px 0;
+  font-family: monospace;
+  font-size:  16px;
+  border-radius: 5px;
+}

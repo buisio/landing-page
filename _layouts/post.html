@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title}} | {{ site.title }}</title>
+    <link rel="icon" href="/assets/images/favicon.png" type="image/png" sizes="16x16"> <!-- TODO -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="description" content="{{page.description}}">
+    <meta name="keywords" content="{{page.keywords | join: "," }}">
+
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600%7COpen+Sans:400%7CVarela+Round">
+    <link rel="stylesheet" href="/assets/css/animate.css"> <!-- Resource style -->
+    <link rel="stylesheet" href="/assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="/assets/css/owl.theme.css">
+    <link rel="stylesheet" href="/assets/css/jquery.accordion.css">
+    <link rel="stylesheet" href="/assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="/assets/css/ionicons.min.css"> <!-- Resource style -->
+    <link rel="stylesheet" href="/assets/css/syntax.css">
+    <link rel="stylesheet" href="/assets/css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="/assets/css/stackone.css" type="text/css" media="all" />
+  </head>
+
+  <body data-spy="scroll" class="stackone">
+    <div class="wrapper">
+      <div class="container">
+        <nav class="navbar navbar-expand-md {% if page.dark.hero %}navbar-dark{% else %}navbar-light{% endif %} fixed-top">
+          <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="/#main"><span>{{site.title}}</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto navbar-right">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/#main">Home</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/#features">About</a></li>
+                <!--<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Features</a></li>-->
+                <!--<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#pricing">Pricing</a></li>-->
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/#faq">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/#contact">Contact</a></li>
+                <!--<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">Get started</a></li>-->
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div id="main" class="main">
+
+        <div id="top" class="hero-home {% if page.dark.title %}hero-dark{% endif %}" style="background: url({{page.banner}}) no-repeat center/cover;">
+          <div class="container">
+            <div class="row text-center">
+              <div class="col-sm-12">
+                <div class="intro-block">
+                  <!--<h4>Focus on solutions</h4>-->
+                  <h1>{{page.title}}</h1>
+                  <p>{{page.description}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- top -->
+
+        <div id="post" class="article">
+          <div class="container">
+            <div class="row text-left">
+              <div class="col-sm-12">
+              {{ content }}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {% if page.contact %}
+        <div id="contact" class="contact">
+          <div class="container">
+            <div class="row text-center">
+              <div class="col-sm-8 offset-sm-2 text-center">
+                <div class="contact-intro wow fadeInDown">
+                  <h1>How can we serve you?</h1>
+                </div>
+              </div>
+              <div class="col-sm-8 offset-sm-2">
+                <div class="contact-form wow fadeInDown">
+                  <form id="contact-form" method="post">
+                    <div class="messages"></div>
+                    <div class="controls">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="form_name">Name (Role) *</label>
+                            <input id="form_name" type="text" name="name" class="form-control" required="required" data-error="Firstname is required.">
+                            <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="form_email">Email *</label>
+                            <input id="form_email" type="email" name="email" class="form-control" required="required" data-error="Valid email is required.">
+                            <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label for="form_message">What does your organization do and what does your organization currently need? *</label>
+                            <textarea id="form_message" name="message" class="form-control" rows="4" required="required" data-error="Explain what you do and which tooling you need?."></textarea>
+                            <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <input type="submit" class="btn btn-success btn-send" value="Open case">
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- contact -->
+        {% endif %}
+
+        <div class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <h2>stack1.io</h2>
+                <p>developed and operated by <a href="{{ site.data.company.owner_url }}">{{ site.data.company.owner }}</a></p>
+                <ul class="footer-sub">
+                  <li>&copy; 2018 {{ site.data.company.owner }}</li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Legal</a></li>
+                </ul>
+              </div>
+              <div class="col-md-6 text-right d-none d-md-block">
+                <ul class="social">
+                  <!--<li><a href="#"><img src="/assets/icons/facebook.png" width="35" alt="Social"></a></li>-->
+                  <li><a href="#"><img src="/assets/icons/twitter.png" width="35" alt="Social"></a></li>
+                  <li><a href="#"><img src="/assets/icons/youtube.png" width="35" alt="Social"></a></li>
+                  <!--<li><a href="#"><img src="/assets/icons/instagram.png" width="35" alt="Social"></a></li>-->
+                </ul>
+                <ul class="footer-nav">
+                  <li><a href="#features">About</a></li>
+                  <li><a href="#">Support</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+                <!--<a class="f-mail" href="tel:180032472349">Call: 1800 3247 2349</a> <br>-->
+                <a class="f-mail" href="mailto:info@stack1.io">info@stack1.io</a>
+              </div>
+            </div>
+          </div>
+        </div><!-- footer -->
+
+        <!-- Scroll To Top -->
+          <a id="back-top" class="back-to-top js-scroll-trigger" href="/#main">
+          <i class="ion-android-navigate"></i>
+          </a>
+        <!-- Scroll To Top Ends-->
+      </div> <!-- Main -->
+    </div><!-- Wrapper -->
+
+    <!-- Jquery and Js Plugins -->
+    <script src="/assets/js/jquery-2.1.1.js"></script>
+    <script src="/assets/js/popper.min.js"></script>
+    <script src="/assets/js/jquery.accordion.js"></script>
+    <script src="/assets/js/jquery.validate.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/plugins.js"></script>
+    <script src="/assets/js/validator.js"></script>
+    {% if page.contact %}
+    <script src="/assets/js/contact.js"></script>
+    {% endif %}
+
+    <script src="/assets/js/custom.js"></script>
+  </body>
+</html>

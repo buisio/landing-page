@@ -139,9 +139,27 @@ $(document).ready(function() {
   $("#signup").validate({
     // if valid, post data via AJAX
     submitHandler: function(form) {
-      $.post("https://formspree.io/stack1@asabina.de", { email: $("#email").val() }, function(data) {
-        $('#response').html(data);
-      });
+      $.post(
+        "https://europe-west1-asabina-infra-test.cloudfunctions.net/function-1",
+        { email: $("#email").val() }
+      ).done(
+        function(data, status, xhr) {
+          console.log("done");
+          console.log({data: data, status: status, xhr: xhr});
+          const msg = data.msg ? data.msg : "Thank you for applying. We are working down the waiting list to get to your case ASAP and discuss your needs."
+
+          $('#signup-form-container').html(`<div class="alert alert-primary response">${msg}</div>`);
+        }
+      ).fail(
+        function(xhr, status, err) {
+          console.log("fail");
+          console.log({xhr: xhr, status: status, err: err});
+        }
+      ).always(
+        function(data, ) {
+          console.log("always");
+        }
+      );
     },
     // all fields are required
     rules: {

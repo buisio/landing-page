@@ -1,0 +1,334 @@
+---
+layout: default
+---
+<!-- Client Section -->
+{% if page.clients and page.clients.size > 0 %}
+<div class="client-section">
+  <div class="container text-center">
+    <div class="clients owl-carousel owl-theme">
+      {% for client in page.clients %}
+      <div class="single">
+        <img src="{{client.image}}" alt="{{client.name}}" />
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<div id="features" class="features">
+  <div class="flex-split">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-sm-12">
+          <h1>Ops-as-a-Service</h1>
+        </div>
+      </div>
+      <div class="row align-start">
+        <div class="col-md-4">
+          <div class="f-left">
+            <div class="left-content wow fadeInLeft" data-wow-delay="0s">
+              <h2>Ship sooner.</h2>
+              <p>Focus on your solution from day one instead of
+              tooling. Bootstrap scalable production-grade environments
+              without sacrificing flexibility and independence such that
+              you don't have to consider costly, error-prone and
+              time-consuming migrations when you'd much rather spend
+              your resources on growth.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="f-left">
+            <div class="left-content wow fadeInLeft" data-wow-delay="0s">
+              <h2>Run leaner.</h2>
+              <p>Avoid building in-house devops teams comprised of
+              network engineers, Linux system administrators, pen
+              testers and tooling experts when you should be focussed
+              on building the solutions your clients care about.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="f-left">
+            <div class="left-content wow fadeInLeft" data-wow-delay="0s">
+              <h2 class="center">Control complexity.</h2> <!-- or Mitigate overhead? -->
+              <p>Following the Ops-as-a-Service model, one should be
+              able to maintain power and control over your
+              infrastructure, while enjoying the simplicity generally
+              offered by Software-as-a-Service solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- features -->
+
+<div id="why-need" class="cta-big">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-5">
+        <div class="cta-big-inner wow fadeInRight">
+          <h4>Why you need stack1.io</h4>
+          <h1>Infrastructure and tooling are hard!</h1>
+          <p>Designing the right infrastructure and selecting the
+          proper tooling to build your solution upon is challenging,
+          considering all the options out there.
+          </p>
+
+          <p>Your customers deserve that you build those solutions that
+          they depend upon on a solid foundation.
+          </p>
+
+          <p>Leverage the experience and knowledge of our engineers who
+          have already solved many of the issues that an in-house team
+          would have to confront.
+          </p>
+
+          <a href="#pricing" class="btn btn-action btn-white">Start now!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- why-need -->
+
+<!--
+<div id="services" class="lbl-services">
+  <div class="container">
+    <div class="row justify-center">
+      <div class="col-md-8">
+        <div class="service-intro text-center">
+         <h1 class="wow fadeInDown">Designed for startups to excel.</h1>
+         <h6>
+           Best in class big data software and analytics services will render your huge chunks into meaningful
+          data. Try the demo now.
+        </h6>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 wow fadeInDown" data-wow-delay="0.1s">
+        <div class="lbl-service-card">
+          <div class="card-icon">
+            <img src="assets/icons/pricing-1.png" width="60" alt="Feature">
+          </div>
+          <div class="card-text">
+            <h1>Cart Management</h1>
+            <p>Big data software and analytics services will render your huge chunks into meaningful data.
+              Try it now.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 wow fadeInDown" data-wow-delay="0.1s">
+        <div class="lbl-service-card">
+          <div class="card-icon">
+            <img src="assets/icons/downloads.png" width="60" alt="Feature">
+          </div>
+          <div class="card-text">
+            <h1>Unlimited Downloads</h1>
+            <p>Big data software and analytics services will render your huge chunks into meaningful data.
+              Try it now.</p>                  </div>
+        </div>
+      </div>
+      <div class="col-sm-4 wow fadeInDown" data-wow-delay="0.1s">
+        <div class="lbl-service-card">
+          <div class="card-icon">
+            <img src="assets/icons/projects.png" width="60" alt="Feature">
+          </div>
+          <div class="card-text">
+            <h1>Personal Projects</h1>
+            <p>Big data software and analytics services will render
+            your huge chunks into meaningful data. Try it now.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>--><!-- services -->
+
+<!--
+<div class="vid-feature">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-sm-8 col-lg-6">
+        <h1>Building Statups to Excel - Label</h1>
+        <div class="vid-cover">
+          <iframe src="https://www.youtube.com/embed/W-C4xu5u1ls?autoplay=0" allowfullscreen="allowfullscreen"></iframe>
+        </div>
+        <h6><b>Label</b> does more than just building a landing page, it brings life to it - <span><a href="#">Buy now</a></span></h6>
+      </div>
+    </div>
+  </div>
+</div>--><!-- vid-feature -->
+
+<!-- f-box Section Starts -->
+<!--
+<div class="f-box">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="f-box-single wow fadeInUp" data-wow-delay="0.6s">
+          <div class="f-box-image">
+            <img  src="assets/icons/growth.png" alt="Icon" />
+          </div>
+          <div class="f-box-content">
+            <h3>Growth Charts</h3>
+            <p>
+              Lorem ipsum dolor sit amet, ei pro unum forensibus. His quis doming eu. Has no tollit detracto.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="f-box-single wow fadeInUp" data-wow-delay="1.2s">
+          <div class="f-box-image">
+            <img  src="assets/icons/mobile.png" alt="Icon" />
+          </div>
+          <div class="f-box-content">
+            <h3>Mobile Responsive</h3>
+            <p>
+              Lorem ipsum dolor sit amet, ei pro unum forensibus. His quis doming eu. Has no tollit detracto.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="f-box-single wow fadeInUp" data-wow-delay="1.8s">
+          <div class="f-box-image">
+            <img  src="assets/icons/safe.png" alt="Icon" />
+          </div>
+          <div class="f-box-content">
+            <h3>Highly Secure</h3>
+            <p>
+              Lorem ipsum dolor sit amet, ei pro unum forensibus. His quis doming eu. Has no tollit detracto.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+<!-- f-box Section Ends Here -->
+
+<!--
+<div id="pricing" class="pricing-section text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="pricing-intro">
+          <h1 class="wow fadeInDown" data-wow-delay="0s">Our Pricing Plans.</h1>
+          <p class="wow fadeInDown" data-wow-delay="0.2s">
+            Get the right plan that suits your effort.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="table-left wow fadeInDown" data-wow-delay="0.4s">
+
+              <div class="pricing-details">
+                <h2>Validate</h2>
+                <span>&euro; 30.00/mo</span>
+                 <ul>
+                   <li>community support</li>
+                   <li>1 environment</li>
+                   <li>Access to validate-tier service catalog</li>
+                 </ul>
+                <button class="btn btn-primary btn-action" type="button">Go Validate</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="table-right wow fadeInDown" data-wow-delay="0.6s">
+
+              <div class="pricing-details">
+                <h2>Live</h2>
+                <span>&euro; 100.00/mo</span>
+                <ul>
+                  <li>4 support hours</li>
+                  <li>3 environments</li>
+                  <li>Access to full service catalog</li>
+                </ul>
+                <button class="btn btn-primary btn-action" type="button">Go Live</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="table-right wow fadeInDown" data-wow-delay="0.6s">
+
+              <div class="pricing-details">
+               <h2>Hyper</h2>
+               <span>&euro; 850.00/mo</span>
+               <ul>
+                 <li>Assigned devops solution architect</li>
+                 <li>5 environments</li>
+                 <li>Access to full service catalog</li>
+               </ul>
+               <button class="btn btn-primary btn-action" type="button">Go Hyper</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>--><!-- pricing -->
+
+{% if site.data.faq and site.data.faq.size > 0 %}
+<div id="faq" class="faq">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="faq-intro text-center">
+          <h1>Frequently asked questions</h1>
+          <!--<p>Drop us a word if your questions isn't listed here. Well get to you within 24 hours</p>-->
+        </div>
+        <div data-accordion-group class="accordion-box">
+          {% for pair in site.data.faq %}
+          <div class="accordion" data-accordion>
+            <div data-control>
+              <h2>{{ pair.q }}</h2>
+            </div>
+            <div data-content>
+              <p>{{ pair.a | newline_to_br }}</p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- faq -->
+
+<div id="why-want" class="cta-big">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-5">
+        <div class="cta-big-inner wow fadeInRight">
+          <h4>Why you want stack1.io</h4>
+          <h1>Flexibility and best-practices.</h1>
+
+          <p>Enjoy access to the continually improving source of the
+          declarative configurations that define your stack.
+          </p>
+
+          <p>Leverage our support when modifying the setup or tackling
+          issues in your setups.
+          </p>
+
+          <p>Our solutions are designed to use well-established tools
+          and implement best practices such that you can march forward
+          with confidence.
+          </p>
+
+          <a href="#pricing" class="btn btn-action btn-white">Start now!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- why-want -->
+{% endif %}
